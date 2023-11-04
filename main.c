@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 17:29:06 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/04 15:58:57 by agilles          ###   ########.fr       */
+/*   Created: 2023/11/04 15:49:14 by agilles           #+#    #+#             */
+/*   Updated: 2023/11/04 16:06:28 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF
-# define FT_PRINTF
+#include "libftgit/libft.h"
+#include "ft_printf.h"
 
-# include <stdarg.h>
-
-// ft_printf.c function
-int	ft_printf(const char *src, ...);
-int	ft_printna(const char *src, va_list *arg, int len);
-int	ft_printarg(char c, va_list *arg, int len);
-
-// All put function
-int	ft_putchar(char c);
-
-#endif
+int	main(void)
+{
+	char	c;
+	c = 'c';
+	printf("printf %%c: %c\n", c);
+	ft_printf("ft_printf %%c: %c\n", c);
+	return (1);
+}

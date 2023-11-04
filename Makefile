@@ -6,7 +6,7 @@
 #    By: agilles <agilles@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 16:14:24 by agilles           #+#    #+#              #
-#    Updated: 2023/10/30 17:15:16 by agilles          ###   ########.fr        #
+#    Updated: 2023/11/04 16:00:19 by agilles          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,5 +29,5 @@ re : fclean all
 %.o : %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
 
-$(NAME) : $(OBJ)
-	ar rcs $@ $^
+#$(NAME) : $(OBJ)
+#	ar rcs $@ $^

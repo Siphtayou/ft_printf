@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:12:32 by agilles           #+#    #+#             */
-/*   Updated: 2023/10/30 18:01:00 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/04 16:08:33 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int	ft_printarg(char c, va_list *arg, int len)
 {
-	if (c == c)
-		len += ft_putchar(va_arg(*arg, char));
-	else if (c == 's')
+	if (c == 'c')
+		len += ft_putchar((char)va_arg(*arg, int));
+/*	else if (c == 's')
 		len += ft_put_s();
 	else if (c == 'p')
 		len += ft_put_p();
@@ -28,7 +28,7 @@ int	ft_printarg(char c, va_list *arg, int len)
 	else if (c == 'x')
 		len += ft_put_x();
 	else if (c == '%')
-		len += ft_put_prc();
+		len += ft_put_prc();*/
 	return (len);
 }
 
@@ -36,15 +36,19 @@ int	ft_printna(const char *src, va_list *arg, int len)
 {
 	int	i;
 
-	i = -1;
-	while (src[++i])
+	i = 0;
+	while (src[i])
 	{
 		if (src[i] == '%')
-			len += ft_printarg(src[i + 1], arg, &len);
+		{
+			len = ft_printarg(src[i + 1], arg, len);
+			i += 2;
+		}
 		else
 		{
 			ft_putchar_fd(src[i], 1);
 			len++;
+			i++;
 		}
 	}
 	return (len);
