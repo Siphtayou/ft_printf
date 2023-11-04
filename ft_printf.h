@@ -6,13 +6,14 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:29:06 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/04 15:58:57 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/04 16:51:00 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF
 # define FT_PRINTF
 
+# include "libft/libft.h"
 # include <stdarg.h>
 
 // ft_printf.c function
