@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_put_s.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 18:01:36 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/07 15:34:48 by agilles          ###   ########.fr       */
+/*   Created: 2023/11/04 18:31:18 by agilles           #+#    #+#             */
+/*   Updated: 2023/11/07 15:36:08 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c, int len)
+int	ft_put_s(char *s, int len)
 {
-	write(1, &c, 1);
-	len++;
+	int	i;
+
+	i = -1;
+	if (!s)
+	{
+		write (1, "(null)", 6);
+		return (len + 6);
+	}
+	while (s[++i])
+	{
+		write(1, &s[i], 1);
+		len++;
+	}
 	return (len);
 }
