@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:49:14 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/07 16:42:43 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/07 17:48:04 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@
 	return (0);
 }*/
 
+// %p main
 /*int	main(void)
 {
 	char	*p;
@@ -70,3 +71,17 @@
 	printf("ft_printf len : %d\n\n", len);
 	return (0);
 }*/
+
+// %u main
+int	main(void)
+{
+	unsigned int	i;
+	int				len;
+
+	i = 86;
+	len = printf("printf %%u : %u\n", i);
+	printf("printf len : %d\n\n", len);
+	len = ft_printf("ft_printf %%u : %u\n", i);
+	printf("ft_printf len : %d\n\n", len);
+	return (0);
+}

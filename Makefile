@@ -6,7 +6,7 @@
 #    By: agilles <agilles@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 16:14:24 by agilles           #+#    #+#              #
-#    Updated: 2023/11/07 16:10:10 by agilles          ###   ########.fr        #
+#    Updated: 2023/11/07 17:48:42 by agilles          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRC =	ft_printf.c\
 		ft_put_s.c\
 		ft_putchar.c\
 		ft_put_di.c\
+		ft_put_u.c\
 		main.c\
 OBJ = $(SRC:.c=.o)
 
