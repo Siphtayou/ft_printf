@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:47:13 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/08 16:57:02 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/08 17:19:50 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	ft_counthex(unsigned long long n, int len)
 {
-	while (n > 16)
+	while (n >= 16)
 	{
 		n /= 16;
 		len++;
@@ -31,7 +31,7 @@ static void	ft_put_hex(unsigned long long n, char c)
 		hex = "0123456789abcdef";
 	else
 		hex = "0123456789ABCDEF";
-	if (n > 16)
+	if (n >= 16)
 		ft_put_hex(n / 16, c);
 	n = n % 16;
 	ft_putchar_fd(hex[n], 1);

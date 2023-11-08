@@ -6,7 +6,7 @@
 #    By: agilles <agilles@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 16:14:24 by agilles           #+#    #+#              #
-#    Updated: 2023/11/08 16:47:24 by agilles          ###   ########.fr        #
+#    Updated: 2023/11/08 17:12:47 by agilles          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,6 @@ clean :
 
 fclean : clean
 	rm -f $(NAME)
-
 
 re : fclean all
 

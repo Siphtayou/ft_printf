@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:49:14 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/08 16:57:41 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/08 17:15:12 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ int	main(void)
 	int len;
 
 	n = 0;
-	nb = 123456;
+	nb = 16;
 	len = printf("printf %%x / %%X : %x / %X\n", n, nb);
 	printf("printf len : %d\n\n", len);
 	len = ft_printf("ft_printf %%x / %%X : %x / %X\n", n, nb);
