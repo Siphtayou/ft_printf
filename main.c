@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:49:14 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/07 17:48:04 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/08 15:42:28 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,19 +42,18 @@
 }*/
 
 // %p main
-/*int	main(void)
+int	main(void)
 {
-	char	*p;
-	char	i;
+	int	i;
 	int	len;
 
-	p = &i;
-	i = "test";
-	len = printf("printf %%s : %s\n", p);
+	i = 8;
+	len = printf("printf %%p : %p\n", &i);
 	printf("printf len : %d\n\n", len);
 	/*len = ft_printf("ft_printf %%s : %s\n", argv[1]);
-	printf("ft_printf len : %d\n\n", len);
-}*/
+	printf("ft_printf len : %d\n\n", len);*/
+	return (0);
+}
 
 // %d and %i main
 /*int	main(void)
@@ -73,15 +72,15 @@
 }*/
 
 // %u main
-int	main(void)
+/*int	main(void)
 {
 	unsigned int	i;
 	int				len;
 
-	i = 86;
+	i = 898569;
 	len = printf("printf %%u : %u\n", i);
 	printf("printf len : %d\n\n", len);
 	len = ft_printf("ft_printf %%u : %u\n", i);
 	printf("ft_printf len : %d\n\n", len);
 	return (0);
-}
+}*/

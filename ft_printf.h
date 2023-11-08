@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:29:06 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/07 15:48:36 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/08 15:17:09 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int	ft_printarg(char c, va_list *arg, int len);
 int	ft_putchar(char c, int len);
 int	ft_put_s(char *s, int len);
 int	ft_put_di(int nb, int len);
+int	ft_put_u(unsigned int nb, int len);
 
 #endif
