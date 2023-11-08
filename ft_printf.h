@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:29:06 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/08 15:17:09 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/08 16:56:39 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ int	ft_putchar(char c, int len);
 int	ft_put_s(char *s, int len);
 int	ft_put_di(int nb, int len);
 int	ft_put_u(unsigned int nb, int len);
+int	ft_put_p(unsigned long long n, int len);
+int	ft_put_x(unsigned long long n, int len, char c);
 
 #endif

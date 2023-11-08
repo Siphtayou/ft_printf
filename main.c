@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:49:14 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/08 15:42:28 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/08 16:57:41 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@
 }*/
 
 // %p main
-int	main(void)
+/*int	main(void)
 {
 	int	i;
 	int	len;
@@ -50,10 +50,10 @@ int	main(void)
 	i = 8;
 	len = printf("printf %%p : %p\n", &i);
 	printf("printf len : %d\n\n", len);
-	/*len = ft_printf("ft_printf %%s : %s\n", argv[1]);
-	printf("ft_printf len : %d\n\n", len);*/
+	len = ft_printf("ft_printf %%p : %p\n", &i);
+	printf("ft_printf len : %d\n\n", len);
 	return (0);
-}
+}*/
 
 // %d and %i main
 /*int	main(void)
@@ -84,3 +84,18 @@ int	main(void)
 	printf("ft_printf len : %d\n\n", len);
 	return (0);
 }*/
+// %x and %X main
+int	main(void)
+{
+	int	n;
+	int	nb;
+	int len;
+
+	n = 0;
+	nb = 123456;
+	len = printf("printf %%x / %%X : %x / %X\n", n, nb);
+	printf("printf len : %d\n\n", len);
+	len = ft_printf("ft_printf %%x / %%X : %x / %X\n", n, nb);
+	printf("ft_printf len : %d\n\n", len - 3);
+	return (0);
+}

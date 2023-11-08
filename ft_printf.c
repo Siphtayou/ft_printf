@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:12:32 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/08 15:34:29 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/08 16:51:19 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ int	ft_printarg(char c, va_list *arg, int len)
 		len = ft_putchar((char)va_arg(*arg, int), len);
 	else if (c == 's')
 		len = ft_put_s(va_arg(*arg, char *), len);
-	/*	else if (c == 'p')
-			len += ft_put_p();*/
+		else if (c == 'p')
+			len = ft_put_p(va_arg(*arg, unsigned long long), len);
 	else if (c == 'd' || c == 'i')
 		len = ft_put_di(va_arg(*arg, int), len);
 	else if (c == 'u')
 		len = ft_put_u(va_arg(*arg, unsigned int), len);
-	/*else if (c == 'x' || c == 'X')
-		len += ft_put_x();*/
+	else if (c == 'x' || c == 'X')
+		len = ft_put_x(va_arg(*arg, unsigned int), len, c);
 	else if (c == '%')
 		len = ft_putchar('%', len);
 	return (len);
