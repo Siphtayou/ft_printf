@@ -6,13 +6,13 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 18:01:36 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/07 15:34:48 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/09 16:17:28 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c, int len)
+int	ft_putchar(char c, int len)
 {
 	write(1, &c, 1);
 	len++;

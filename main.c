@@ -6,7 +6,7 @@
 /*   By: agilles <agilles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 15:49:14 by agilles           #+#    #+#             */
-/*   Updated: 2023/11/08 17:15:12 by agilles          ###   ########.fr       */
+/*   Updated: 2023/11/09 16:25:23 by agilles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,18 +42,18 @@
 }*/
 
 // %p main
-/*int	main(void)
+int	main(void)
 {
 	int	i;
 	int	len;
 
 	i = 8;
-	len = printf("printf %%p : %p\n", &i);
-	printf("printf len : %d\n\n", len);
-	len = ft_printf("ft_printf %%p : %p\n", &i);
+	/*len = printf("printf %%p : %p\n", 16);
+	printf("printf len : %d\n\n", len);*/
+	len = ft_printf("ft_printf %%p : %p\n", 16);
 	printf("ft_printf len : %d\n\n", len);
 	return (0);
-}*/
+}
 
 // %d and %i main
 /*int	main(void)
@@ -85,7 +85,7 @@
 	return (0);
 }*/
 // %x and %X main
-int	main(void)
+/*int	main(void)
 {
 	int	n;
 	int	nb;
@@ -98,4 +98,4 @@ int	main(void)
 	len = ft_printf("ft_printf %%x / %%X : %x / %X\n", n, nb);
 	printf("ft_printf len : %d\n\n", len - 3);
 	return (0);
-}
+}*/
